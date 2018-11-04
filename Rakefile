@@ -1,4 +1,4 @@
-load 'spec.rb'
+load 'test/spec.rb'
 
 desc 'Run tests'
 task :test do

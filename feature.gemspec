@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'solving math tasks'
+  s.name        = 'solving_math_tasks'
   s.version     = '1.0.0'
   s.date        = '2018-11-04'
 
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.require_paths = ['lib']
 
-  s.add_development_dependency 'quality_assurance', '~> 1.0.0'
+  s.add_development_dependency 'quality_assurance', '~> 1.0.1'
 
   s.files = [
     'LICENSE',

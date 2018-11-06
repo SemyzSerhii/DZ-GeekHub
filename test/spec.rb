@@ -15,11 +15,11 @@ class Spec
   end
 
   def formula_solution_t1
-    assert(expected: result = -0.04081632653061224, actual:Feature.formula_solution(6, 8))
+    assert(expected: result = -0.0408, actual:Feature.formula_solution(6, 8))
   end
 
   def formula_solution_t2
-    assert(expected: result = 0.02560124127230411, actual:Feature.formula_solution(-56, -23))
+    assert(expected: result = 0.0256, actual:Feature.formula_solution(-56, -23))
   end
 
   def volume_area_cube_t
@@ -33,7 +33,7 @@ class Spec
   end
 
   def average_ar_geo_num_t1
-    expected_result = { arithmetical: 49.5, geometrical: 49.07137658554119 }
+    expected_result = { arithmetical: 49.5, geometrical: 49.0714 }
     assert(expected: expected_result, actual:Feature.average_ar_geo_num(56, 43))
   end
 
@@ -48,12 +48,12 @@ class Spec
   end
 
   def area_hypot_triangle_t1
-    expected_result = { area: 12.5, hypotenuse: 7.0710678118654755 }
+    expected_result = { area: 12.5, hypotenuse: 7.0711 }
     assert(expected: expected_result, actual:Feature.area_hypot_triangle(5, 5))
   end
 
   def area_hypot_triangle_t2
-    expected_result = {  area: 50, hypotenuse: 14.142135623730951}
+    expected_result = {  area: 50, hypotenuse: 14.1421}
     assert(expected: expected_result, actual:Feature.area_hypot_triangle(10, 10))
   end
 
@@ -62,51 +62,51 @@ class Spec
   end
 
   def permtr_multicutnik_t1
-    assert(expected: perimeter = 35.26711513754839, actual:Feature.permtr_multicutnik(5, 6))
+    assert(expected: perimeter = 35.2671, actual:Feature.permtr_multicutnik(5, 6))
   end
 
   def permtr_multicutnik_t2
-    assert(expected: perimeter = 376.74311717588023, actual:Feature.permtr_multicutnik(50, 60))
+    assert(expected: perimeter = 376.7431, actual:Feature.permtr_multicutnik(50, 60))
   end
 
   def compound_resistance_t
-    assert(expected: resistance_connection = 1.0526315789473684, actual:Feature.compound_resistance(5, 4, 2))
+    assert(expected: resistance_connection = 1.0526, actual:Feature.compound_resistance(5, 4, 2))
   end
 
   def fall_time_t
-    assert(expected: time = 0.9021281496396893, actual:Feature.fall_time(4))
+    assert(expected: time = 0.9021, actual:Feature.fall_time(4))
   end
 
   def calcul_value_a_b_t1
-    expected_result = { value_a: -2.0542392471657545, value_b: 26 }
+    expected_result = { value_a: -2.0542, value_b: 26 }
     assert(expected: expected_result, actual:Feature.calcul_value_a_b(4, 5, 7))
   end
 
   def calcul_value_a_b_t2
-    expected_result = { value_a: 3.830368057339472, value_b: 154 }
+    expected_result = { value_a: 3.8304, value_b: 154 }
     assert(expected: expected_result, actual:Feature.calcul_value_a_b(20, 15, 17))
   end
 
   def area_triangle_t
-    assert(expected: area = 5.656854249492381, actual:Feature.area_triangle(4))
+    assert(expected: area = 5.6569, actual:Feature.area_triangle(4))
   end
 
   def period_of_oscillation_t
-    assert(expected: oscillation_period = 5.302151459045603, actual:Feature.period_of_oscillation(7))
+    assert(expected: oscillation_period = 5.3022, actual:Feature.period_of_oscillation(7))
   end
 
 
   def force_of_gravity_t
-    assert(expected: force = 1.3477e-10, actual:Feature.force_of_gravity(6, 4, 3))
+    assert(expected: force = 0.00000000013477, actual:Feature.force_of_gravity(6, 4, 3))
   end
 
   def sec_leg_radius_inscr_circle_t
-    expected_result = { second_leg: 3, radius: 0.40824829046386296 }
+    expected_result = { second_leg: 3, radius: 0.4082 }
     assert(expected: expected_result, actual:Feature.sec_leg_radius_inscr_circle(4, 5))
   end
 
   def area_circle_t
-    assert(expected: area = 2.864788975654116, actual:Feature.area_circle(6))
+    assert(expected: area = 2.8648, actual:Feature.area_circle(6))
   end
 
   def ring_area_t
@@ -114,12 +114,12 @@ class Spec
   end
 
   def sides_triangle_t
-    expected_result = { side_a: 12.108839924926851, side_b:15.342788394610215, side_c:4.470647971182814 }
+    expected_result = { side_a: 12.1088, side_b:15.3428, side_c:4.4706 }
     assert(expected: expected_result, actual:Feature.sides_triangle(4, 5, 6, 8))
   end
 
   def meeting_time_t
-    assert(expected: time = 0.15831239517770007, actual:Feature.meeting_time(20, 60, 40, 80, 200))
+    assert(expected: time = 0.1583, actual:Feature.meeting_time(20, 60, 40, 80, 200))
   end
 
   def sum_arith_progressio_t

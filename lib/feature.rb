@@ -144,20 +144,20 @@ class Feature
       }
     end
 
-    def dist_between_points(coordinates_x_frt_point, coordinates_y_frt_point,
-      coordinates_x_scnd_point, coordinates_y_scnd_point)
-      distance = (Math.sqrt((coordinates_x_scnd_point - coordinates_x_frt_point) ** 2 +
-        (coordinates_y_scnd_point - coordinates_y_frt_point) ** 2)).round
+    def dist_between_points(coord_x_frt_point, coord_y_frt_point,
+      coord_x_scnd_point, coord_y_scnd_point)
+      distance = (Math.sqrt((coord_x_scnd_point - coord_x_frt_point) ** 2 +
+        (coord_y_scnd_point - coord_y_frt_point) ** 2)).round
     end
 
-    def permtr_area_triangle(coordinates_x_point_a, coordinates_y_point_a, coordinates_x_point_b,
-      coordinates_y_point_b, coordinates_x_point_c, coordinates_y_point_c)
-      distance_a = calcuate_distance(coordinates_x_point_b, coordinates_x_point_a,
-        coordinates_y_point_b,coordinates_y_point_a)
-      distance_b = calcuate_distance(coordinates_x_point_b, coordinates_x_point_c,
-        coordinates_y_point_b, coordinates_y_point_c)
-      distance_c =  calcuate_distance(coordinates_x_point_c, coordinates_x_point_a,
-        coordinates_y_point_c, coordinates_y_point_a)
+    def permtr_area_triangle(coord_x_point_a, coord_y_point_a, coord_x_point_b,
+      coord_y_point_b, coord_x_point_c, coord_y_point_c)
+      distance_a = calcuate_distance(coord_x_point_b, coord_x_point_a,
+        coord_y_point_b,coord_y_point_a)
+      distance_b = calcuate_distance(coord_x_point_b, coord_x_point_c,
+        coord_y_point_b, coord_y_point_c)
+      distance_c =  calcuate_distance(coord_x_point_c, coord_x_point_a,
+        coord_y_point_c, coord_y_point_a)
       semiperimeter = ((distance_a + distance_b + distance_c) / 2)
       {
         perimeter: distance_a + distance_b + distance_c,
@@ -332,14 +332,10 @@ class Feature
       semiperimeter = (side_1 + side_2 + side_3) / 2
       (2 * Math.sqrt(side_1 * side_2 * semiperimeter * (semiperimeter - side_3)) / (side_1 + side_2)).round(1)
     end
-    def calcuate_distance(coordinate_x_point_1, ccoordinate_x_point_2,coordinate_y_point_1,coordinate_y_point_2)
-      Math.sqrt((coordinate_x_point_1 - ccoordinate_x_point_2) ** 2 +
-        (coordinate_y_point_1 - coordinate_y_point_2) ** 2).round
+    def calcuate_distance(coord_x_point_1, coord_x_point_2,coord_y_point_1,coord_y_point_2)
+      Math.sqrt((coord_x_point_1 - coord_x_point_2) ** 2 +
+        (coord_y_point_1 - coord_y_point_2) ** 2).round
     end
 
   end
 end
-
-
-
-
